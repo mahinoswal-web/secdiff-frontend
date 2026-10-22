@@ -1,0 +1,9 @@
+name: secdiff-app
+workers:
+  - name: secdiff-worker
+    github:
+      repo: YOUR_GITHUB_USERNAME/secdiff-agent
+      branch: main
+      deploy_on_push: true
+    dockerfile_path: Dockerfile
+    instance_size_slug: basic-xxs
